@@ -1,0 +1,26 @@
+/* ! GOOGLE FONTS LINKING */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* !RESET TO DEFAULTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ! CUSTOM CSS */
+:root {
+  --header-height: 6rem;
+
+  /* ? COLORS */
+  --first-color: ;
+  --title-color: ;
+  --text-color: ;
+  --body-color: ;
+  --container-color: ;
+  --border-color: ;
+
+  /* ? FONTS AND TYPOGRAPHY */
+  --body-font: ;
+  --second-font: "";
+}
