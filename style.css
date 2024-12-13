@@ -85,6 +85,8 @@ input {
   outline: none;
 }
 
+/*! GENERAL CSS */
+
 .container {
   max-width: 1460px;
   margin-inline: auto;
@@ -93,11 +95,22 @@ input {
 
 .section {
   padding: 8rem 0;
+  padding-bottom: 2rem;
 }
 
 .section-title {
   font-size: var(--h1-fs);
   margin-bottom: 1rem;
+}
+
+.section-description {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.section-title:not(.about .section-title),
+.section-description {
+  text-align: center;
 }
 
 /* ! MAIN  SECTION */
@@ -158,10 +171,12 @@ input {
 
 .about-img {
   width: 1200px;
+  flex-basis: 100%;
 }
 
 .about-img img {
   border-radius: var(--b-radius);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 .about-description {
@@ -211,6 +226,11 @@ input {
 
 .tabs-btn.active::after {
   background: var(--first-color);
+  width: 100%;
+}
+
+.tabs-item {
+  min-height: 350px;
   width: 100%;
 }
 
