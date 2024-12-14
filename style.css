@@ -788,7 +788,7 @@ label {
 /* ? MOBILE PHONE  */
 @media screen and (max-width: 699px) {
   :root {
-    --b-fs: 2rem;
+    --b-fs: 1.5rem;
     --h1-fs: 1.5rem;
     --h2-fs: 1.2rem;
     --h3-fs: 1rem;
@@ -798,7 +798,7 @@ label {
   }
 
   .section {
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
   }
 
   .section-title:not(.about .section-title, .contact-heading .section-title),
@@ -857,6 +857,7 @@ label {
 
   .links a:first-child {
     margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   /* ? CONTACT  SECTION */
@@ -871,5 +872,19 @@ label {
 
   .contact-img {
     display: none;
+  }
+
+  /* ? FOOTER SECTION */
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-social-link {
+    display: none;
+  }
+
+  .footer-logo img {
+    width: 20px;
   }
 }
