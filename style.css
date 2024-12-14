@@ -472,11 +472,11 @@ label {
 /* ? ===== CONTACT SECTION ===== */
 .contact {
   background-color: var(--container-color);
-  min-height: 100vh;
 }
 
 .contact.section {
   padding-top: 2rem;
+  padding-bottom: 5%;
 }
 
 .contact-container {
@@ -563,18 +563,8 @@ label {
   width: 50px;
 }
 
-.footer-social-link {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--text-color);
-  border-radius: 50%;
-}
-
 .footer-social-link i {
-  font-size: 1.8rem;
+  font-size: var(--h2-fs);
   color: var(--text-color);
   transition: all 0.5s ease;
 }
@@ -585,7 +575,6 @@ label {
 }
 
 /* ! SCROLL UP FUNCTION */
-
 .scroll-up {
   position: fixed;
   right: 1rem;
@@ -627,7 +616,6 @@ label {
 
   .section {
     padding: 3rem 2rem;
-    padding-bottom: 2rem;
   }
 
   .section-title {
@@ -642,6 +630,10 @@ label {
 
   .home-img {
     width: 600px;
+  }
+
+  .home-img img {
+    border: 0.5rem solid #96b5e7;
   }
 
   /* ? ABOUT SECTION */
@@ -678,6 +670,7 @@ label {
     width: 400px;
   }
 
+  /* ? SCROLL UP SECTION */
   .scroll-up {
     width: 30px;
     height: 30px;
