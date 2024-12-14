@@ -8,6 +8,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 /* ! CUSTOM CSS */
@@ -140,7 +141,7 @@ label {
 /* ! HEADER  SECTION*/
 .header {
   position: absolute;
-  text-outline: 0 0 #000;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 101;
@@ -224,6 +225,27 @@ label {
 .active-link,
 .nav-link:hover {
   color: var(--first-color);
+}
+
+.scroll-header {
+  position: fixed;
+  background: var(--container-color);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
+  animation: slide-down 0.7s;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-header .nav {
+  height: var(--header-height);
 }
 
 /* ! MAIN  SECTION */
