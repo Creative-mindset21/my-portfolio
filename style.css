@@ -120,6 +120,112 @@ label {
   text-align: center;
 }
 
+.contact-btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  background: var(--first-color);
+  color: #0f0f0f;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--transition);
+  border: 2px solid var(--first-color);
+}
+
+.contact-btn:hover {
+  background: transparent;
+  color: var(--first-color);
+}
+
+/* ! HEADER  SECTION*/
+.header {
+  position: absolute;
+  text-outline: 0 0 #000;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+}
+
+.nav,
+.nav-socials,
+.nav-list {
+  display: flex;
+}
+
+.nav-toggle,
+.nav-close {
+  display: none;
+}
+
+.nav {
+  height: calc(var(--header-height) + 1.5rem);
+  align-items: center;
+  justify-content: space-between;
+  gap: 5.5rem;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-logo img {
+  width: 50px;
+}
+
+.nav-logo span {
+  color: var(--first-color);
+}
+
+.nav-list {
+  gap: 2rem;
+}
+
+.nav-link,
+.nav-social-link {
+  font-size: var(--small-fs);
+  color: var(--title-color);
+  transition: all 0.3s var(--transition);
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-socials {
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+.nav-social-link:hover {
+  color: var(--first-color);
+  transform: translateY(-0.25rem);
+}
+
+.nav-link-btn {
+  font-size: var(--smaller-fs);
+  background-color: transparent;
+  border-color: var(--border-color);
+  padding: 0.625rem 1.25rem;
+  color: var(--first-color);
+}
+
+.nav-link-btn:hover {
+  background: var(--first-color);
+  border-color: var(--first-color);
+  color: #0f0f0f;
+}
+
+.nav-btns .contact-btn {
+  display: block;
+}
+
+.active-link,
+.nav-link:hover {
+  color: var(--first-color);
+}
+
 /* ! MAIN  SECTION */
 
 /* ? ===== HOME ===== */
@@ -141,11 +247,13 @@ label {
   letter-spacing: 0.25rem;
   margin-bottom: 1.25rem;
   display: block;
+  text-transform: capitalize;
 }
 
 .home-title {
   font-family: var(--second-font);
   font-size: var(--b-fs);
+  font-weight: var(--weight-900);
 }
 
 .home-title span {
@@ -399,23 +507,6 @@ label {
 .contact-img img {
   border-radius: var(--b-radius);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
-}
-
-.contact-btn {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  background: var(--first-color);
-  color: #0f0f0f;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s var(--transition);
-  border: 2px solid var(--first-color);
-}
-
-.contact-btn:hover {
-  background: transparent;
-  color: var(--first-color);
 }
 
 .error-message {
