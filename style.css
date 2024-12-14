@@ -185,7 +185,7 @@ label {
 
 .nav-link,
 .nav-social-link {
-  font-size: var(--small-fs);
+  font-size: var(--normal-fs);
   color: var(--title-color);
   transition: all 0.3s var(--transition);
 }
@@ -276,6 +276,7 @@ label {
   font-family: var(--second-font);
   font-size: var(--b-fs);
   font-weight: var(--weight-900);
+  max-width: 1500px;
 }
 
 .home-title span {
@@ -307,8 +308,7 @@ label {
 }
 
 .about-img {
-  width: 1200px;
-  flex-basis: 100%;
+  width: 100%;
 }
 
 .about-img img {
@@ -545,6 +545,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 95%;
   padding: 1rem 0;
 }
 
@@ -608,4 +609,82 @@ label {
 
 .show-scroll {
   bottom: 3rem;
+}
+
+/* ! MEDIA QUERIES */
+
+/* ? LARGE DEVICES */
+@media screen and (max-width: 1299px) {
+  :root {
+    --b-fs: 3rem;
+    --h1-fs: 2.5rem;
+    --h2-fs: 1.5rem;
+    --h3-fs: 1.2rem;
+    --normal-fs: 1rem;
+    --small-fs: 0.9rem;
+    --smaller-fs: 0.8rem;
+  }
+
+  .section {
+    padding: 3rem 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .section-title {
+    margin-bottom: 0.5rem;
+  }
+
+  /* ? HOME SECTION */
+
+  .home-container {
+    gap: 4rem;
+  }
+
+  .home-img {
+    width: 600px;
+  }
+
+  /* ? ABOUT SECTION */
+  .about-container {
+    gap: 2rem;
+  }
+
+  .about-description {
+    margin-bottom: 1rem;
+  }
+
+  .tabs-btns {
+    margin-bottom: 1rem;
+  }
+
+  .tab-description span:last-child {
+    margin-bottom: 1rem;
+  }
+
+  /* ? CONTACT SECTION */
+  .contact-heading h2 {
+    margin-bottom: 0;
+  }
+
+  .contact-heading p {
+    margin-bottom: 1rem;
+  }
+
+  .contact-form {
+    gap: 1rem;
+  }
+
+  .contact-right .contact-img {
+    width: 400px;
+  }
+
+  .scroll-up {
+    width: 30px;
+    height: 30px;
+  }
+
+  .scrollup-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
 }
