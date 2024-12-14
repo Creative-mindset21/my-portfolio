@@ -398,6 +398,7 @@ label {
   position: relative;
   margin-bottom: 4rem;
   overflow: hidden;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .portfolio-img img {
@@ -456,11 +457,16 @@ label {
 }
 
 .links a {
-  background-color: #00b4d8;
+  background-color: hsl(190, 100%, 42%);
   color: var(--text-color);
   font-weight: var(--weight-600);
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  transition: all 0.4s var(--transition);
+}
+
+.links a:hover {
+  background-color: hsl(190, 100%, 22%);
 }
 
 .links a:first-child {
@@ -775,6 +781,7 @@ label {
   }
 }
 
+/* ? MOBILE PHONE  */
 @media screen and (max-width: 599px) {
   :root {
     --b-fs: 2rem;
