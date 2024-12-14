@@ -276,6 +276,7 @@
                 placeholder="Joe Edwards"
                 id="name"
                 name="name"
+                required
               />
 
               <label for="email">Email</label>
@@ -284,6 +285,7 @@
                 placeholder="joeedwards@gmail.com"
                 id="email"
                 name="email"
+                required
               />
 
               <label for="subject">Subject</label>
@@ -292,6 +294,7 @@
                 placeholder="Write a Subject"
                 id="subject"
                 name="subject"
+                required
               />
 
               <label for="message">Name</label>
@@ -299,13 +302,14 @@
                 id="message"
                 placeholder="Your message"
                 name="message"
+                required
               ></textarea>
 
               <button type="submit" id="submit-btn" class="contact-btn">
                 Submit
               </button>
 
-              <p class="error-message" id="error-message">Error</p>
+              <p class="error-message" id="error-message"></p>
             </form>
           </div>
 
@@ -321,6 +325,12 @@
         </div>
       </section>
     </main>
+
+    <!-- !EMAIL.JS LINKING -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
     <!-- !CUSTOM JS LINKING -->
     <script src="script.js"></script>

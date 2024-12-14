@@ -342,11 +342,18 @@ label {
 /* ? ===== CONTACT SECTION ===== */
 .contact {
   background-color: var(--container-color);
+  min-height: 100vh;
 }
+
+.contact.section {
+  padding-top: 2rem;
+}
+
 .contact-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 3rem;
 }
 
 .contact-left {
@@ -369,13 +376,14 @@ label {
   flex-direction: column;
   gap: 2rem;
   align-items: start;
+  position: relative;
 }
 
 .contact-form input,
 .contact-form textarea {
   border: 2px solid var(--border-color);
   padding: 1.2rem 1rem;
-  width: 100%;
+  width: 90%;
   border-radius: var(--b-radius);
 }
 
@@ -385,7 +393,7 @@ label {
 }
 
 .contact-right .contact-img {
-  width: 550px;
+  width: 500px;
 }
 
 .contact-img img {
@@ -401,4 +409,19 @@ label {
   border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s var(--transition);
+  border: 2px solid var(--first-color);
+}
+
+.contact-btn:hover {
+  background: transparent;
+  color: var(--first-color);
+}
+
+.error-message {
+  position: absolute;
+  bottom: -9%;
+  left: 0;
+  font-size: var(--small-fs);
+  font-weight: var(--weight-400);
 }
