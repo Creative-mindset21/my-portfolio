@@ -469,10 +469,6 @@ label {
   background-color: hsl(190, 100%, 22%);
 }
 
-.links a:first-child {
-  margin-right: 1rem;
-}
-
 .portfolio-item:hover::after {
   opacity: 1;
 }
@@ -782,7 +778,7 @@ label {
 }
 
 /* ? MOBILE PHONE  */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 699px) {
   :root {
     --b-fs: 2rem;
     --h1-fs: 1.5rem;
@@ -837,7 +833,15 @@ label {
 
   /* ? PORTFOLIO SECTION */
   .portfolio-item {
-    height: 370px;
+    height: 400px;
+  }
+
+  .links a {
+    display: inline-block;
+  }
+
+  .links a:first-child {
+    margin-right: 0.5rem;
   }
 
   /* ? CONTACT  SECTION */
