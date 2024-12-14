@@ -265,7 +265,7 @@ label {
 }
 
 .portfolio-img img {
-  border-radius: var(--b-radius);
+  border-radius: 5px;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
   vertical-align: middle;
   transition: all 1s var(--transition);
@@ -316,7 +316,7 @@ label {
 }
 
 .links {
-  padding-bottom: 1rem;
+  padding: 1.5rem 0;
 }
 
 .links a {
@@ -420,8 +420,52 @@ label {
 
 .error-message {
   position: absolute;
-  bottom: -9%;
+  bottom: -6%;
   left: 0;
   font-size: var(--small-fs);
   font-weight: var(--weight-400);
+}
+
+/* ! FOOTER SECTION */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.footer-logo p {
+  transition: all 0.5s var(--transition);
+}
+
+.footer-logo img {
+  width: 50px;
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--text-color);
+  border-radius: 50%;
+}
+
+.footer-social-link i {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+
+.footer-logo:hover p,
+.footer-social-link:hover i {
+  color: var(--first-color);
 }
