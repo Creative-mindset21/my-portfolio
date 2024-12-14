@@ -721,10 +721,13 @@ label {
     top: 0;
     right: -100%;
     width: 60vw;
-    height: 100vh;
+    height: 40vh;
+    display: grid;
+    place-content: center;
     background-color: var(--container-color);
     padding: 3.5rem;
     transition: all 0.7s var(--transition);
+    border-radius: 10px 0 0 10px;
   }
 
   .show-menu {
@@ -734,6 +737,11 @@ label {
   .nav-list {
     flex-direction: column;
     gap: 1.125rem;
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: var(--h1-fs);
   }
 
   .nav-close {
@@ -793,6 +801,12 @@ label {
     padding: 2rem 1rem;
   }
 
+  .section-title:not(.about .section-title, .contact-heading .section-title),
+  .section-description {
+    text-align: left;
+    padding: 0 1rem;
+  }
+
   /* ? HOME SECTION */
   .home {
     padding-top: 25%;
@@ -832,6 +846,7 @@ label {
   }
 
   /* ? PORTFOLIO SECTION */
+
   .portfolio-item {
     height: 400px;
   }
