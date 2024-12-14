@@ -68,3 +68,11 @@ contactForm.addEventListener("submit", (e) => {
     contactMessage.value = "";
   }
 });
+
+//! DATE UPDATE
+const today = new Date();
+const footerCopyright = document.getElementById("footer-copyright");
+
+footerCopyright.innerHTML = `&copy; ${today.getFullYear()}. All rights reserved`;
+
+console.log(footerCopyright);
